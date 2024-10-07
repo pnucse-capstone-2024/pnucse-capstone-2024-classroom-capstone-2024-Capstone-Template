@@ -9,7 +9,7 @@
 ---
 
 ## 1. 레파지토리 생성
-- [https://classroom.github.com/a/iX0VWqGp](https://classroom.github.com/a/iX0VWqGp)
+- [https://classroom.github.com/a/NJK_cPkH](https://classroom.github.com/a/NJK_cPkH)
 - 위 Github Classroom 링크에 접속해 본인 조의 github 레파지토리를 생성하세요.
 <img src="https://github.com/user-attachments/assets/b5a7f34a-e146-4253-b57d-672737a75a50" alt="깃헙 클래스룸 레포 생성" width="600" />
 
