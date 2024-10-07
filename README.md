@@ -192,12 +192,12 @@ __double underscores__ <br />
 
 ### 5.8. 유튜브 영상 추가
 ```markdown
-[![영상 이름](유튜브 영상 썸네일 URL)](유투브 영상 URL)
+[![영상 이름](유튜브 영상 썸네일 URL)](유튜브 영상 URL)
 [![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
 ```
 [![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://www.youtube.com/watch?v=zh_gQ_lmLqE)    
 
-- 이때 유투브 영상 썸네일 URL은 유투브 영상 URL로부터 다음과 같이 얻을 수 있습니다.
+- 이때 유튜브 영상 썸네일 URL은 유투브 영상 URL로부터 다음과 같이 얻을 수 있습니다.
 
 - `Youtube URL`: https://www.youtube.com/watch?v={동영상 ID}
 - `Youtube Thumbnail URL`: http://img.youtube.com/vi/{동영상 ID}/0.jpg 
