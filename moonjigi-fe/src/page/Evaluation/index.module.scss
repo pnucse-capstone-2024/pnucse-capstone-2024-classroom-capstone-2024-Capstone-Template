@@ -1,0 +1,38 @@
+.container {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  height: auto;
+  text-align: left;
+}
+
+.title {
+  margin: 10px;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+.description {
+  color: #aaa;
+  margin: 10px;
+  font-size: 18px;
+  padding-bottom: 10px;
+  word-wrap: break-word;
+  width: 100%;
+  word-break: break-all;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+table {
+  //border: 1px solid #aaa;
+  box-sizing: border-box;
+  //border-collapse: collapse;
+  padding: 4px 0;
+  margin: 10px;
+  width: 700px;
+  background-color: rgba(255, 128, 182, 0.2);
+}
+td {
+  //border: 1px solid #aaa;
+  box-sizing: border-box;
+  padding: 4px 4px;
+  background-color: rgba(255, 240, 120, 0.2);
+}

@@ -1,0 +1,222 @@
+INPUT
+$x = 'y';
+$$x = 10;
+echo $y * 2;
+
+OUTPUT
+$x = 'y';
+$y = 10;
+echo 20;
+
+INPUT
+$s = "abc";
+$s[0] = 0;
+echo $s;
+
+OUTPUT
+$s = "abc";
+$s[0] = 0;
+echo "0bc";
+
+INPUT
+$a = [];
+$a[] = "abc";
+echo $a[0];
+
+OUTPUT
+$a = [];
+$a[] = "abc";
+echo "abc";
+
+INPUT
+
+$obj = new stdClass();
+$obj->foo = 'bar';
+echo '' . $obj->foo;
+
+OUTPUT
+
+$obj = new stdClass();
+$obj->foo = 'bar';
+echo "bar";
+
+INPUT
+
+$a = "base64_decode";
+$b = $a("YmFzZTY0X2RlY29kZQ==");
+${$b("dGhlQ29kZQ==")} = "VGVzdA==";
+
+function test() {
+    global $b, $theCode;
+    echo "{$b("$theCode")} 123\n";
+
+}
+
+test();
+
+OUTPUT
+
+$a = "base64_decode";
+$b = "base64_decode";
+$theCode = "VGVzdA==";
+function test()
+{
+    global $b, $theCode;
+    echo "Test 123\n";
+}
+test();
+
+INPUT
+
+$test = 'abc';
+echo $test;
+for ($i = 0; $i < 10; $i++) {
+    $arr[$i] = $i;
+    $arr[2] = 100;
+    $temp = "a";
+    $b = $temp;
+    echo "$b";
+    echo "$j";
+    echo "{$arr[$i]}";
+}
+$a = array(1, 2,3);
+$a[0] = $a[2];
+echo "$b" . "$temp" . "$a" .  "$i" . "$test";
+echo "$test";
+
+OUTPUT
+
+$test = 'abc';
+echo "abc";
+for ($i = 0; $i < 10; $i++) {
+    $arr[$i] = $i;
+    $arr[2] = 100;
+    $temp = "a";
+    $b = $temp;
+    echo "a";
+    echo "{$j}";
+    echo "{$arr[$i]}";
+}
+$a = array(1, 2, 3);
+$a[0] = $a[2];
+echo "{$b}" . "{$temp}" . "Array" . "{$i}" . "{$test}";
+echo "{$test}";
+
+INPUT
+
+namespace NS;
+echo __LINE__;
+echo __FILE__;
+echo __DIR__;
+
+function func() {
+    echo __FUNCTION__;
+}
+
+class Foo {
+    function bar() {
+        echo __CLASS__;
+        echo __METHOD__;
+        echo __NAMESPACE__;
+        echo __FUNCTION__;
+    }
+}
+trait T {
+    function f() {
+        echo __TRAIT__;
+        echo __NAMESPACE__;
+        echo __CLASS__;
+    }
+}
+
+OUTPUT
+
+namespace NS;
+
+echo 3;
+echo "/var/www/html/testcase.php";
+echo "/var/www/html";
+function func()
+{
+    echo "NS\\func";
+}
+class Foo
+{
+    function bar()
+    {
+        echo "NS\\Foo";
+        echo "NS\\Foo::bar";
+        echo "NS";
+        echo "bar";
+    }
+}
+trait T
+{
+    function f()
+    {
+        echo "NS\\T";
+        echo "NS";
+        echo __CLASS__;
+    }
+}
+
+INPUT
+
+function foo() {
+    $myVar = "123";
+    echo eval('return $myVar;');
+}
+
+OUTPUT
+
+function foo()
+{
+    $myVar = "123";
+    echo "123";
+}
+
+INPUT
+
+$var = "foo";
+function () {
+    return $var;
+};
+function () use ($var) {
+    return $var;
+};
+function () use (&$var) {
+    return $var;
+};
+
+OUTPUT
+
+$var = "foo";
+function () {
+    return $var;
+};
+function () use($var) {
+    return "foo";
+};
+function () use(&$var) {
+    return "foo";
+};
+
+INPUT
+
+$a = 0;
+LABEL:
+print $a;
+if ($a < 10) {
+    $a++;
+    goto LABEL;
+}
+
+OUTPUT
+
+$a = 0;
+LABEL:
+print $a;
+if ($a < 10) {
+    $a++;
+    goto LABEL;
+}

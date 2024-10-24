@@ -1,0 +1,79 @@
+.container {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  height: auto;
+}
+
+.terminalSection {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0 70px;
+  gap: 30px;
+  background-color: #000;
+  color: white;
+}
+.captionSide {
+  box-sizing: border-box;
+  text-align: right;
+  color: #aaa;
+  padding: 0 50px;
+}
+
+.mainSection {
+  text-align: left;
+  padding: 0 70px;
+}
+
+.descriptionSide {
+  width: 45%;
+}
+
+.highlight {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.imgSide {
+  width: 50%;
+}
+
+.rightSide img {
+  max-width: 100%;
+  height: auto;
+}
+
+//ML
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.listItem {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: normal;
+  color: #aaa;
+}

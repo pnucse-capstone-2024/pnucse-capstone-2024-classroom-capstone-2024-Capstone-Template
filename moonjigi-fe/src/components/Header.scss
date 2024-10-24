@@ -1,0 +1,38 @@
+.header-container {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 36px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+  &:hover {
+    color: var(--main-color);
+  }
+}
+
+.selected {
+  color: var(--highlight-color);
+}
