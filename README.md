@@ -13,7 +13,7 @@
 
 ### 2. 상세설계
 #### 2.1. 시스템 구성도
-> (추후첨부)
+![흐름도](https://github.com/user-attachments/assets/59d5e74c-d9c4-4d91-b1d9-167108003271)
 
 #### 2.2. 사용 기술
 #### Front-end
