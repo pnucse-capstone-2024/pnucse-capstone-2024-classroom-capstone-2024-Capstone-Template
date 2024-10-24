@@ -1,0 +1,6 @@
+Flask==2.2.2
+Flask-Cors==5.0.0
+xgboost==2.1.1
+pandas==2.2.3
+numpy==1.23.5
+bottleneck==1.4.0

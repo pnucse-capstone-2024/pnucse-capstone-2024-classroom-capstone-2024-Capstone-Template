@@ -1,0 +1,98 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: white;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.attachScreen {
+  height: 100vh;
+  padding: 300px 0;
+  box-sizing: border-box;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 36px;
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputFile {
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  width: 570px;
+  height: 73px;
+  display: flex; // Add this line to enable flexbox
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &:hover {
+    border-bottom: 2px solid var(--highlight-color);
+  }
+}
+
+.inputName {
+  display: flex; // Add this line to enable flexbox
+  flex-direction: row;
+  align-items: center;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  justify-content: end;
+  align-items: end;
+}
+
+.resultWrapper {
+  padding: 10px;
+  width: 1400px;
+  height: 499px;
+  margin-bottom: 100px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.resultBox {
+  background-color: black;
+  width: 1400px;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  overflow-y: scroll;
+  height: 499px;
+  text-align: left;
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.resultSection {
+  margin-bottom: 200px;
+}
+.result {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--highlight-color);
+}
